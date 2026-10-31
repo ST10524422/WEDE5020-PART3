@@ -1,0 +1,190 @@
+/* ==========================================================================
+   EcoCare Community Trust - Master Stylesheet
+   Color Palette:
+   - Primary Header/Nav: Forest Green (#2E7D32)
+   - Secondary/Accents: Warm Earth Brown (#5D4037)
+   - Background Light: Light Cream (#F5F5DC)
+   - Text/Cards: Charcoal (#222222) / White (#FFFFFF)
+   ========================================================================== */
+
+:root {
+  --primary-green: #2e7d32;
+  --primary-dark-green: #1b5e20;
+  --accent-brown: #5d4037;
+  --bg-cream: #f5f5dc;
+  --card-bg: #ffffff;
+  --text-color: #222222;
+  --text-muted: #555555;
+  --border-radius: 8px;
+}
+
+/* Base Styles & Typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-cream);
+  color: var(--text-color);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header & Navigation */
+header {
+  background-color: var(--primary-green);
+  color: #ffffff;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #c8e6c9;
+  text-decoration: underline;
+}
+
+/* Main Layout Container */
+main {
+  flex: 1;
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 10px;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  color: var(--primary-dark-green);
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Image Container */
+picture img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: block;
+  object-fit: cover;
+}
+
+/* CSS Grid Layout */
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Card Styling */
+.card {
+  background-color: var(--card-bg);
+  padding: 1.8rem;
+  border-radius: var(--border-radius);
+  border-left: 5px solid var(--accent-brown);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: var(--primary-green);
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+  flex-grow: 1;
+}
+
+/* Interactive Buttons */
+.btn {
+  align-self: flex-start;
+  background-color: var(--primary-green);
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: var(--accent-brown);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-dark-green);
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

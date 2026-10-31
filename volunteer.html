@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign up to volunteer or sponsor EcoCare Community Trust green initiatives in Gauteng.">
+  <title>Volunteer & Enquire - EcoCare Community Trust</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <h1>EcoCare Community Trust</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="volunteer.html" class="active">Volunteer</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Layout -->
+  <main>
+    <section>
+      <h2>Volunteer & Sponsorship Opportunities</h2>
+      <p>Whether you are an individual looking to donate weekend hours or a corporate sponsor seeking CSR alignment, submit your enquiry below.</p>
+    </section>
+
+    <!-- Enquiry Form Section -->
+    <section>
+      <h2>Enquiry & Sign-Up Form</h2>
+      <form id="enquiry-form" action="#" method="POST" class="card">
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label for="name" style="display:block; margin-bottom: 0.4rem; font-weight:600;">Full Name:</label>
+          <input type="text" id="name" name="name" required style="width:100%; padding:0.6rem; border:1px solid #ccc; border-radius:4px;">
+        </div>
+        
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label for="email" style="display:block; margin-bottom: 0.4rem; font-weight:600;">Email Address:</label>
+          <input type="email" id="email" name="email" required style="width:100%; padding:0.6rem; border:1px solid #ccc; border-radius:4px;">
+        </div>
+        
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label for="phone" style="display:block; margin-bottom: 0.4rem; font-weight:600;">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required style="width:100%; padding:0.6rem; border:1px solid #ccc; border-radius:4px;">
+        </div>
+        
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label for="enquiry-type" style="display:block; margin-bottom: 0.4rem; font-weight:600;">Enquiry / Participation Type:</label>
+          <select id="enquiry-type" name="enquiry_type" required style="width:100%; padding:0.6rem; border:1px solid #ccc; border-radius:4px;">
+            <option value="">Select an option</option>
+            <option value="weekend">Weekend Volunteer</option>
+            <option value="corporate">Corporate Sponsor</option>
+            <option value="mentor">Mentor & Educator</option>
+          </select>
+        </div>
+        
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label for="message" style="display:block; margin-bottom: 0.4rem; font-weight:600;">Additional Details:</label>
+          <textarea id="message" name="message" rows="5" required style="width:100%; padding:0.6rem; border:1px solid #ccc; border-radius:4px;"></textarea>
+        </div>
+        
+        <button type="submit" class="btn">Submit Enquiry</button>
+      </form>
+    </section>
+
+    <!-- Responsive Picture Tag -->
+    <section>
+      <h2>Join Our Field Volunteers</h2>
+      <picture>
+        <source media="(min-width: 1024px)" srcset="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1000&auto=format&fit=crop">
+        <source media="(min-width: 768px)" srcset="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=700&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&auto=format&fit=crop" alt="Volunteers working outdoors">
+      </picture>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 EcoCare Community Trust (NPO). All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript Integration -->
+  <script src="script.js"></script>
+</body>
+</html>

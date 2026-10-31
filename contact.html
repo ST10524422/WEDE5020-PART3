@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact EcoCare Community Trust in Gauteng for general enquiries, community partnerships, or volunteering opportunities.">
+  <title>Contact Us - EcoCare Community Trust</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <h1>EcoCare Community Trust</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Layout -->
+  <main>
+    <section>
+      <h2>Get in Touch</h2>
+      <p>Reach out directly to our team in Gauteng for enquiries regarding community partnerships, donations, or volunteering.</p>
+    </section>
+
+    <!-- Interactive Form Section -->
+    <section>
+      <h2>Send Us a Message</h2>
+      <form id="contact-form" action="#" method="POST" class="card">
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label for="contact-name" style="display:block; margin-bottom: 0.4rem; font-weight:600;">Your Name:</label>
+          <input type="text" id="contact-name" name="name" required style="width:100%; padding:0.6rem; border:1px solid #ccc; border-radius:4px;">
+        </div>
+        
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label for="contact-email" style="display:block; margin-bottom: 0.4rem; font-weight:600;">Email Address:</label>
+          <input type="email" id="contact-email" name="email" required style="width:100%; padding:0.6rem; border:1px solid #ccc; border-radius:4px;">
+        </div>
+
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label for="contact-phone" style="display:block; margin-bottom: 0.4rem; font-weight:600;">Phone Number:</label>
+          <input type="tel" id="contact-phone" name="phone" required style="width:100%; padding:0.6rem; border:1px solid #ccc; border-radius:4px;">
+        </div>
+        
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label for="contact-msg" style="display:block; margin-bottom: 0.4rem; font-weight:600;">Message:</label>
+          <textarea id="contact-msg" name="message" rows="5" required style="width:100%; padding:0.6rem; border:1px solid #ccc; border-radius:4px;"></textarea>
+        </div>
+        
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Grid Options for Channels -->
+    <section class="grid-layout">
+      <article class="card">
+        <h3>Email Enquiries</h3>
+        <p>Send an email to our team for general questions or financial transparency reports.</p>
+        <a href="mailto:info@ecocare.org.za" class="btn">info@ecocare.org.za</a>
+      </article>
+
+      <article class="card">
+        <h3>Head Office Location</h3>
+        <p>EcoCare Community Trust Hub, Johannesburg, Gauteng, South Africa.</p>
+        <span class="btn" style="background-color: var(--accent-brown);">Gauteng HQ</span>
+      </article>
+
+      <article class="card">
+        <h3>Social Channels</h3>
+        <p>Follow our social media platforms for live updates on weekly cleanups and workshops.</p>
+        <span class="btn" style="background-color: var(--accent-brown);">@EcoCareTrust</span>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 EcoCare Community Trust (NPO). All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript Integration -->
+  <script src="script.js"></script>
+</body>
+</html>
